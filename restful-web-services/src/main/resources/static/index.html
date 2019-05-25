@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script type="text/javascript" language="javascript" src="script/jquery.js"></script>
+    <script type="text/javascript" language="javascript" src="script/validation.js"></script>
+
+
+    <script>
+       function myfunction(){
+            alert("Access Denied !!");
+        }
+    </script>
+</head>
+<body style="background-color: black">
+
+<section id="lgoin-page-wrap" style="margin-top: 50px">
+    <div class="container text-light">
+        <div class="row">
+            <div class="col-lg-4 col-md-8 m-auto">
+                <div class="login-page-content">
+                    <div class="login-form"><br>
+                        <h3 class="align text-center text-light">Payment Details</h3><hr class="bg-light">
+                        <form action="" id="myform" method="post">
+                            <div class="form-group">
+                                <label>Name</label>
+                                <input type="text" class="form-control" style="background: transparent;" id="form_firstname" name="first_name" placeholder="Enter First Name">
+                                <span class="error_form text-danger" id="firstname_error_message"></span>
+                            </div>
+                            <div class="form-group">
+                                <label>Amount</label>
+                                <input type="number" class="form-control " style="background: transparent;"  placeholder="Enter the Amount">
+                            </div>
+                            <div class="form-group">
+                                <label>Date</label>
+                                <input type="date" class="form-control" style="background: transparent;" id="form_username" name="user_name" placeholder="Enter Username">
+
+                            </div>
+                            <div class="form-group">
+                                <label>Method</label>
+                                <div class="dropdown">
+                                    <a class="btn btn-secondary dropdown-toggle form-control" style="background: transparent;" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Select Payment Method
+                                    </a>
+
+                                    <div class="dropdown-menu form-control" style="background: transparent;" aria-labelledby="dropdownMenuLink">
+                                        <a class="dropdown-item text-light" href="#">Pay Pal</a>
+                                        <a class="dropdown-item text-light" href="#">Credit Card</a>
+                                </div>
+                                </div>
+                            </div>
+                            <br>
+                            <br>
+
+
+                            <hr>
+                            <div style="margin-bottom: 400px;">
+                                <button type="submit" name="sign_up" onclick="myfunction();" id="sign_up" value="sign_up" class="btn btn-block btn-primary">Sign Up</button>
+
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
